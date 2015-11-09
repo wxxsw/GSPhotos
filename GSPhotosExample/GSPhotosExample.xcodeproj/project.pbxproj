@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185C507A1BE9F09600CC3F0E /* GSFetchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C50791BE9F09600CC3F0E /* GSFetchOptions.swift */; };
 		186AEB891BD6443C001BA9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AEB881BD6443C001BA9B1 /* AppDelegate.swift */; };
 		186AEB8E1BD6443C001BA9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186AEB8C1BD6443C001BA9B1 /* Main.storyboard */; };
 		186AEB901BD6443C001BA9B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186AEB8F1BD6443C001BA9B1 /* Images.xcassets */; };
 		186AEB931BD6443C001BA9B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186AEB911BD6443C001BA9B1 /* LaunchScreen.xib */; };
-		186AEB9F1BD6443C001BA9B1 /* GSPhotosExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AEB9E1BD6443C001BA9B1 /* GSPhotosExampleTests.swift */; };
 		186AEBAA1BD644D4001BA9B1 /* GSPhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AEBA91BD644D4001BA9B1 /* GSPhotoLibrary.swift */; };
 		186AEBAC1BD645E2001BA9B1 /* GSAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AEBAB1BD645E2001BA9B1 /* GSAsset.swift */; };
 		186AEBAE1BD72EAF001BA9B1 /* UIImageView+GSPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AEBAD1BD72EAF001BA9B1 /* UIImageView+GSPhotos.swift */; };
@@ -19,28 +19,19 @@
 		186AEBB21BD73FCF001BA9B1 /* PHPhotoLibraryGSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AEBB11BD73FCF001BA9B1 /* PHPhotoLibraryGSHelper.swift */; };
 		186AEBB81BD7910F001BA9B1 /* AssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AEBB71BD7910F001BA9B1 /* AssetsViewController.swift */; };
 		186AEBBA1BD793C3001BA9B1 /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AEBB91BD793C3001BA9B1 /* AssetCell.swift */; };
+		187799021BF07AE60097C0E3 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187799011BF07AE60097C0E3 /* AlbumsViewController.swift */; };
+		188083191C18264D00E388ED /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188083181C18264D00E388ED /* AlbumCell.swift */; };
+		18B7C6341BE0670E0058F3C5 /* GSAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7C6331BE0670E0058F3C5 /* GSAlbum.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		186AEB991BD6443C001BA9B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 186AEB7B1BD6443C001BA9B1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 186AEB821BD6443C001BA9B1;
-			remoteInfo = GSPhotosExample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		185C50791BE9F09600CC3F0E /* GSFetchOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSFetchOptions.swift; sourceTree = "<group>"; };
 		186AEB831BD6443C001BA9B1 /* GSPhotosExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSPhotosExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186AEB871BD6443C001BA9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		186AEB881BD6443C001BA9B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186AEB8D1BD6443C001BA9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		186AEB8F1BD6443C001BA9B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		186AEB921BD6443C001BA9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		186AEB981BD6443C001BA9B1 /* GSPhotosExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSPhotosExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		186AEB9D1BD6443C001BA9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		186AEB9E1BD6443C001BA9B1 /* GSPhotosExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPhotosExampleTests.swift; sourceTree = "<group>"; };
 		186AEBA91BD644D4001BA9B1 /* GSPhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSPhotoLibrary.swift; sourceTree = "<group>"; };
 		186AEBAB1BD645E2001BA9B1 /* GSAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSAsset.swift; sourceTree = "<group>"; };
 		186AEBAD1BD72EAF001BA9B1 /* UIImageView+GSPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+GSPhotos.swift"; sourceTree = "<group>"; };
@@ -48,17 +39,13 @@
 		186AEBB11BD73FCF001BA9B1 /* PHPhotoLibraryGSHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPhotoLibraryGSHelper.swift; sourceTree = "<group>"; };
 		186AEBB71BD7910F001BA9B1 /* AssetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsViewController.swift; sourceTree = "<group>"; };
 		186AEBB91BD793C3001BA9B1 /* AssetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetCell.swift; sourceTree = "<group>"; };
+		187799011BF07AE60097C0E3 /* AlbumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		188083181C18264D00E388ED /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		18B7C6331BE0670E0058F3C5 /* GSAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSAlbum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		186AEB801BD6443C001BA9B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		186AEB951BD6443C001BA9B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,7 +60,7 @@
 			children = (
 				186AEBA81BD644A6001BA9B1 /* GSPhotos */,
 				186AEB851BD6443C001BA9B1 /* GSPhotosExample */,
-				186AEB9B1BD6443C001BA9B1 /* GSPhotosExampleTests */,
+				186AEB861BD6443C001BA9B1 /* Supporting Files */,
 				186AEB841BD6443C001BA9B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				186AEB831BD6443C001BA9B1 /* GSPhotosExample.app */,
-				186AEB981BD6443C001BA9B1 /* GSPhotosExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,13 +76,11 @@
 		186AEB851BD6443C001BA9B1 /* GSPhotosExample */ = {
 			isa = PBXGroup;
 			children = (
+				188083171C17CD2E00E388ED /* Cell */,
 				186AEB881BD6443C001BA9B1 /* AppDelegate.swift */,
+				187799011BF07AE60097C0E3 /* AlbumsViewController.swift */,
 				186AEBB71BD7910F001BA9B1 /* AssetsViewController.swift */,
-				186AEBB91BD793C3001BA9B1 /* AssetCell.swift */,
 				186AEB8C1BD6443C001BA9B1 /* Main.storyboard */,
-				186AEB8F1BD6443C001BA9B1 /* Images.xcassets */,
-				186AEB911BD6443C001BA9B1 /* LaunchScreen.xib */,
-				186AEB861BD6443C001BA9B1 /* Supporting Files */,
 			);
 			path = GSPhotosExample;
 			sourceTree = "<group>";
@@ -104,26 +88,12 @@
 		186AEB861BD6443C001BA9B1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				186AEB8F1BD6443C001BA9B1 /* Images.xcassets */,
+				186AEB911BD6443C001BA9B1 /* LaunchScreen.xib */,
 				186AEB871BD6443C001BA9B1 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		186AEB9B1BD6443C001BA9B1 /* GSPhotosExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				186AEB9E1BD6443C001BA9B1 /* GSPhotosExampleTests.swift */,
-				186AEB9C1BD6443C001BA9B1 /* Supporting Files */,
-			);
-			path = GSPhotosExampleTests;
-			sourceTree = "<group>";
-		};
-		186AEB9C1BD6443C001BA9B1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				186AEB9D1BD6443C001BA9B1 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = GSPhotosExample;
 			sourceTree = "<group>";
 		};
 		186AEBA81BD644A6001BA9B1 /* GSPhotos */ = {
@@ -131,12 +101,23 @@
 			children = (
 				186AEBA91BD644D4001BA9B1 /* GSPhotoLibrary.swift */,
 				186AEBAB1BD645E2001BA9B1 /* GSAsset.swift */,
+				18B7C6331BE0670E0058F3C5 /* GSAlbum.swift */,
+				185C50791BE9F09600CC3F0E /* GSFetchOptions.swift */,
 				186AEBAD1BD72EAF001BA9B1 /* UIImageView+GSPhotos.swift */,
 				186AEBAF1BD73FAF001BA9B1 /* ALAssetsLibraryGSHelper.swift */,
 				186AEBB11BD73FCF001BA9B1 /* PHPhotoLibraryGSHelper.swift */,
 			);
 			name = GSPhotos;
 			path = ../GSPhotos;
+			sourceTree = "<group>";
+		};
+		188083171C17CD2E00E388ED /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				186AEBB91BD793C3001BA9B1 /* AssetCell.swift */,
+				188083181C18264D00E388ED /* AlbumCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,39 +140,19 @@
 			productReference = 186AEB831BD6443C001BA9B1 /* GSPhotosExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		186AEB971BD6443C001BA9B1 /* GSPhotosExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 186AEBA51BD6443C001BA9B1 /* Build configuration list for PBXNativeTarget "GSPhotosExampleTests" */;
-			buildPhases = (
-				186AEB941BD6443C001BA9B1 /* Sources */,
-				186AEB951BD6443C001BA9B1 /* Frameworks */,
-				186AEB961BD6443C001BA9B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				186AEB9A1BD6443C001BA9B1 /* PBXTargetDependency */,
-			);
-			name = GSPhotosExampleTests;
-			productName = GSPhotosExampleTests;
-			productReference = 186AEB981BD6443C001BA9B1 /* GSPhotosExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		186AEB7B1BD6443C001BA9B1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Gesen;
 				TargetAttributes = {
 					186AEB821BD6443C001BA9B1 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					186AEB971BD6443C001BA9B1 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 186AEB821BD6443C001BA9B1;
 					};
 				};
 			};
@@ -209,7 +170,6 @@
 			projectRoot = "";
 			targets = (
 				186AEB821BD6443C001BA9B1 /* GSPhotosExample */,
-				186AEB971BD6443C001BA9B1 /* GSPhotosExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,13 +185,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		186AEB961BD6443C001BA9B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -239,8 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188083191C18264D00E388ED /* AlbumCell.swift in Sources */,
+				18B7C6341BE0670E0058F3C5 /* GSAlbum.swift in Sources */,
+				187799021BF07AE60097C0E3 /* AlbumsViewController.swift in Sources */,
 				186AEBAE1BD72EAF001BA9B1 /* UIImageView+GSPhotos.swift in Sources */,
 				186AEBB21BD73FCF001BA9B1 /* PHPhotoLibraryGSHelper.swift in Sources */,
+				185C507A1BE9F09600CC3F0E /* GSFetchOptions.swift in Sources */,
 				186AEBAA1BD644D4001BA9B1 /* GSPhotoLibrary.swift in Sources */,
 				186AEBB01BD73FAF001BA9B1 /* ALAssetsLibraryGSHelper.swift in Sources */,
 				186AEBAC1BD645E2001BA9B1 /* GSAsset.swift in Sources */,
@@ -250,23 +207,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		186AEB941BD6443C001BA9B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				186AEB9F1BD6443C001BA9B1 /* GSPhotosExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		186AEB9A1BD6443C001BA9B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 186AEB821BD6443C001BA9B1 /* GSPhotosExample */;
-			targetProxy = 186AEB991BD6443C001BA9B1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		186AEB8C1BD6443C001BA9B1 /* Main.storyboard */ = {
@@ -309,6 +250,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -376,6 +318,7 @@
 				INFOPLIST_FILE = GSPhotosExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.gesen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -387,41 +330,8 @@
 				INFOPLIST_FILE = GSPhotosExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.gesen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		186AEBA61BD6443C001BA9B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GSPhotosExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSPhotosExample.app/GSPhotosExample";
-			};
-			name = Debug;
-		};
-		186AEBA71BD6443C001BA9B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GSPhotosExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSPhotosExample.app/GSPhotosExample";
 			};
 			name = Release;
 		};
@@ -444,14 +354,7 @@
 				186AEBA41BD6443C001BA9B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		186AEBA51BD6443C001BA9B1 /* Build configuration list for PBXNativeTarget "GSPhotosExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				186AEBA61BD6443C001BA9B1 /* Debug */,
-				186AEBA71BD6443C001BA9B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
