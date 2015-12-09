@@ -1,25 +1,40 @@
 # GSPhotos
-still in development…
 
+// ...
 
 ## Example
 
-从相册中获取所有图片资源：
+获取所有相册：
 ```swift
-GSPhotoLibrary.sharedInstance.fetchAssets(.Image) { [unowned self] assets, error in
-    if let assets = assets where error == nil {
-        self.assets = assets
-        self.collectionView!.reloadData()
-    } else {
-        println(GSPhotoLibrary.authorizationStatus())
-    }
+GSPhotoLibrary.sharedInstance.fetchAlbums { albums, error in
+    // do something ...
 }
 ```
 
-在UIImageView上显示缩略图：
+获取所有资源：
 ```swift
-cell.imageView.setImageWithAsset(assets[indexPath.row], size: .Thumbnail)
+GSPhotoLibrary.sharedInstance.fetchAllAssets(.Image) { assets, error in
+    // do something ...
+}
 ```
+
+获取指定相册中的资源：
+```swift
+GSPhotoLibrary.sharedInstance.fetchAssetsInAlbum(album, mediaType: .Image) { assets, error in
+    // do something ...
+}
+```
+
+UIImageView扩展：
+```swift
+imageView.setImageWithAsset(asset, size: .Thumbnail)
+imageView.setImageWithAsset(asset, size: .Original)
+imageView.setImageWithAlbum(album)
+```
+
+## Parameter
+
+// ...
 
 ## License
 
