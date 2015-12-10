@@ -19,6 +19,15 @@ public class GSAlbum {
     // 相册名称
     private(set) var name: String
     
+    // 包含的资源数量
+    private(set) lazy var count: Int = {
+        if #available(iOS 8, *) {
+            return PHAsset.fetchAssetsInAssetCollection(self.phAssetCollection, options: nil).count
+        } else {
+            return self.alAssetsGroup.numberOfAssets()
+        }
+    }()
+    
     @available(iOS 8.0, *)
     init(phAssetCollection: PHAssetCollection) {
         self.originalAssetCollection = phAssetCollection

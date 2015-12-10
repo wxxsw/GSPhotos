@@ -37,7 +37,7 @@ class AlbumsViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! AlbumCell
         
         let album = albums[indexPath.row]
-        cell.nameLabel.text = album.name
+        cell.titleLabel.text = "\(album.name)（\(album.count)）"
         cell.posterView.setImageWithAlbum(album)
 
         return cell

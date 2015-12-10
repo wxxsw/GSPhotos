@@ -10,7 +10,7 @@ import UIKit
 
 class AlbumCell: UITableViewCell {
     
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var posterView: UIImageView!
 
 }

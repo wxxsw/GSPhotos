@@ -49,8 +49,8 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <outlet property="nameLabel" destination="Pcp-iL-nJe" id="byo-wa-L3Z"/>
                                     <outlet property="posterView" destination="ipr-CU-9zH" id="3Zl-Rx-nsU"/>
+                                    <outlet property="titleLabel" destination="Pcp-iL-nJe" id="eax-VQ-cmn"/>
                                     <segue destination="FM4-e2-r51" kind="push" identifier="showAlbum" id="85D-28-aQe"/>
                                 </connections>
                             </tableViewCell>
