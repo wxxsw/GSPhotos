@@ -11,28 +11,30 @@
 
 ## Example
 
-### 获取列表
+### 列表
 
-相册列表，返回`GSAlbum`数组，如果执行成功`error`值为`nil`
+获取相册列表，返回`GSAlbum`数组
 ```swift
 GSPhotoLibrary.sharedInstance.fetchAlbums { albums, error in
     // do something...
 }
 ```
 
-指定相册下的照片列表，返回`GSAsset`数组，如果执行成功`error`值为`nil`
+指定相册下的照片列表，返回`GSAsset`数组
 ```swift
 GSPhotoLibrary.sharedInstance.fetchAssetsInAlbum(album, mediaType: .Image) { assets, error in
     // do something...
 }
 ```
 
-所有照片的列表，返回`GSAsset`数组，如果执行成功`error`值为`nil`
+所有照片的列表，返回`GSAsset`数组
 ```swift
 GSPhotoLibrary.sharedInstance.fetchAllAssets(.Image) { assets, error in
     // do something...
 }
 ```
+
+注：列表获取成功时`error`为`nil`，否则返回的数组为`nil`
 
 ### 设置 UIImageView：
 
@@ -69,7 +71,7 @@ imageView.setImageWithAlbum(album, placeHolderImage: placeHolderImage)
 获取封面图片 UIImage
     
     //
-    //  示例
+    //  示例：
     //  album.getPosterImage { image in
     //      // do something...
     //  }
@@ -126,7 +128,7 @@ localIdentifier 或者 representationUTI 唯一标识：
 获取图片 UIImage
 
     //
-    //  示例
+    //  示例：
     //  asset.getImage(.Orignal) { image in
     //      // do something...
     //  }
