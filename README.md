@@ -13,21 +13,21 @@
 
 ### 列表
 
-获取相册列表，返回`GSAlbum`数组
+获取相册列表，返回`GSAlbum`数组：
 ```swift
 GSPhotoLibrary.sharedInstance.fetchAlbums { albums, error in
     // do something...
 }
 ```
 
-指定相册下的照片列表，返回`GSAsset`数组
+获取指定相册下的照片列表，返回`GSAsset`数组：
 ```swift
 GSPhotoLibrary.sharedInstance.fetchAssetsInAlbum(album, mediaType: .Image) { assets, error in
     // do something...
 }
 ```
 
-所有照片的列表，返回`GSAsset`数组
+获取所有照片的列表，返回`GSAsset`数组：
 ```swift
 GSPhotoLibrary.sharedInstance.fetchAllAssets(.Image) { assets, error in
     // do something...
@@ -54,21 +54,21 @@ imageView.setImageWithAlbum(album, placeHolderImage: placeHolderImage)
 
 #### Properties
 
-原始的 PHAssetCollection 或者 ALAssetsGroup 实例：
-
-	private(set) var originalAssetCollection: AnyObject
-
 相册名称：
 
     private(set) var name: String
     
-包含的资源数量
+包含的资源数量：
 
     private(set) var count: Int
     
+原始的 PHAssetCollection 或者 ALAssetsGroup 实例：
+
+    private(set) var originalAssetCollection: AnyObject
+
 #### Functions
     
-获取封面图片 UIImage
+获取封面图片的UIImage对象：
     
     //
     //  示例：
@@ -82,50 +82,50 @@ imageView.setImageWithAlbum(album, placeHolderImage: placeHolderImage)
 ## GSAsset
 
 #### Properties
+    
+资源类型，比如图片、视频等：
 
-原始的 PHAsset 或者 ALAsset 实例：
+    private(set) var mediaType: GSAssetMediaType!
+    
+图片或视频资源的宽度，单位为像素：
 
-    private(set) var originalAsset: AnyObject
+    private(set) var pixelWidth: Int!
+    
+图片或视频资源的高度，单位为像素：
+
+    private(set) var pixelHeight: Int!
+    
+资源的原始创建时间：
+
+    private(set) var creationDate: NSDate!
+    
+资源最后被修改的时间 (ios8+ only)：
+
+    private(set) var modificationDate: NSDate?
+    
+资源的位置信息：
+
+    private(set) var location: CLLocation?
+    
+视频资源的时长，单位为秒：
+
+    private(set) var duration: NSTimeInterval?
     
 localIdentifier 或者 representationUTI 唯一标识：
 
     private(set) var uniqueIdentifier: String?
     
-资源类型，比如图片、视频等
-
-    private(set) var mediaType: GSAssetMediaType!
-    
-图片或视频资源的宽度，单位为像素
-
-    private(set) var pixelWidth: Int!
-    
-图片或视频资源的高度，单位为像素
-
-    private(set) var pixelHeight: Int!
-    
-资源的原始创建时间
-
-    private(set) var creationDate: NSDate!
-    
-资源最后被修改的时间 (ios8+ only)
-
-    private(set) var modificationDate: NSDate?
-    
-资源的位置信息
-
-    private(set) var location: CLLocation?
-    
-视频资源的时长，单位为秒
-
-    private(set) var duration: NSTimeInterval?
-    
-同一个Burst序列的唯一标识 (ios8+ only)
+同一个Burst序列的唯一标识 (ios8+ only)：
 
     private(set) var burstIdentifier: String?
 
+原始的 PHAsset 或者 ALAsset 实例：
+
+    private(set) var originalAsset: AnyObject
+
 #### Functions
 
-获取图片 UIImage
+获取图片的UIImage对象：
 
     //
     //  示例：
@@ -141,7 +141,6 @@ localIdentifier 或者 representationUTI 唯一标识：
 `mediaType`: 资源类型
 ```swift
 public enum GSAssetMediaType : Int {
-    
     case Unknown = 0    // 未知
     case Image   = 1    // 图片
     case Video   = 2    // 视频
@@ -152,7 +151,6 @@ public enum GSAssetMediaType : Int {
 `size`: 图片大小
 ```swift
 public enum GSPhotoImageSize {
-    
     case Thumbnail      // 缩略图
     case Original       // 原图
 }
