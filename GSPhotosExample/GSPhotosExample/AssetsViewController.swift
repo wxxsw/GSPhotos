@@ -12,8 +12,8 @@ private let reuseIdentifier = "Cell"
 
 class AssetsViewController: UICollectionViewController {
     
-    var album: GSAlbum?
-    var assets: [GSAsset] = []
+    var album  : GSAlbum?
+    var assets : [GSAsset] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,25 +43,29 @@ class AssetsViewController: UICollectionViewController {
             
         }
     }
-
-    // MARK: UICollectionViewDataSource
-
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return assets.count
-    }
-
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! AssetCell
     
-        cell.imageView.setImageWithAsset(assets[indexPath.row], size: .Thumbnail)
-    
-        return cell
-    }
-    
-    // MARK: Setup Layout
+    // MARK: Private
     
     private func setupItemSize() {
         let sideLength = (view.bounds.size.width - 5 * 4) / 3
         (collectionViewLayout as! UICollectionViewFlowLayout).itemSize = CGSize(width: sideLength, height: sideLength)
     }
+    
+}
+
+// MARK: UICollectionViewDataSource
+extension AssetsViewController {
+    
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return assets.count
+    }
+    
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! AssetCell
+        
+        cell.imageView.setImageWithAsset(assets[indexPath.row], size: .Thumbnail)
+        
+        return cell
+    }
+    
 }

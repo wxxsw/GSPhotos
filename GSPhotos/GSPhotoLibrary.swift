@@ -10,12 +10,10 @@ import UIKit
 
 public enum GSPhotoAuthorizationStatus: Int {
     
-    case NotDetermined // User has not yet made a choice with regards to this application
-    case Restricted // This application is not authorized to access photo data.
-    // The user cannot change this application’s status, possibly due to active restrictions
-    //  such as parental controls being in place.
-    case Denied // User has explicitly denied this application access to photos data.
-    case Authorized // User has authorized this application to access photos data.
+    case NotDetermined  // 用户还没决定是否授权应用访问照片.
+    case Restricted     // 用户无法改变应用状态，可能由于主动限制.（例如家长控制）
+    case Denied         // 用户明确拒绝应用访问照片数据.
+    case Authorized     // 用户已经授权应用访问照片数据.
 }
 
 public typealias AssetsCompletionHandler = ([GSAsset]?, NSError?) -> Void
@@ -28,6 +26,13 @@ public class GSPhotoLibrary {
     static let sharedInstance = GSPhotoLibrary()
     
     // MARK: Functions
+    
+    class var canUsePhotos: Bool {
+        get {
+            let status = authorizationStatus()
+            return status == .Authorized || status == .NotDetermined
+        }
+    }
     
     /**
      获取当前访问权限

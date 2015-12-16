@@ -12,7 +12,10 @@ import AssetsLibrary
 class ALAssetsLibraryGSHelper {
     
     /// 共享api实例
-    let library = ALAssetsLibrary()
+    let library: ALAssetsLibrary = {
+        ALAssetsLibrary.disableSharedPhotoStreamsSupport()
+        return ALAssetsLibrary()
+    }()
     
     /// 分组缓存
     var groups = [ALAssetsGroup]()

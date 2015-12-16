@@ -113,28 +113,6 @@ public class GSAsset {
     // MARK: Public Method
     
     /**
-    获取缩略图
-    
-    - parameter handler: 完成回调
-    
-    - returns: 图片请求ID
-    */
-    public func getThumbnailImage(handler: (UIImage) -> Void) -> GSImageRequestID {
-        return getImage(.Thumbnail, handler)
-    }
-    
-    /**
-     获取原图
-     
-     - parameter handler: 完成回调
-     
-     - returns: 图片请求ID
-     */
-    public func getOriginalImage(handler: (UIImage) -> Void) -> GSImageRequestID {
-        return getImage(.Original, handler)
-    }
-    
-    /**
      获取图片
      
      - parameter size:    大小
